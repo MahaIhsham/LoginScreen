@@ -21,6 +21,7 @@ class _signupState extends State<signup> {
    final _formKey = GlobalKey<FormState>();
   TextEditingController Username = TextEditingController();
   TextEditingController password = TextEditingController();
+  TextEditingController Email= TextEditingController();
   final ScrollController _scrollController = ScrollController();
   String? _error;
 
@@ -143,7 +144,7 @@ suffixIcon:Align(
                       width: 70.w,
                       margin: EdgeInsets.all(10),
                       child: TextFormField(
-                        controller: Username,
+                        controller: Email,
                         autocorrect: true,
                         keyboardType: TextInputType.name,
                         // Only numbers can be entered
